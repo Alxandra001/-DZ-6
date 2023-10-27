@@ -1,0 +1,50 @@
+class Phone:
+def __init__(self, number, model, weight):
+self.number = number
+self.model = model
+self.weight = weight
+
+def receiveCall(self, name):
+print("Звонит", name)
+
+def getNumber(self):
+return self.number
+
+phone1 = Phone("123456789", "iPhone X", "150g")
+phone2 = Phone("987654321", "Samsung Galaxy S20", "170g")
+phone3 = Phone("567890123", "Google Pixel 4", "160g")
+
+# Вывод значений переменных на консоль
+print("Phone 1:")
+print("Number:", phone1.number)
+print("Model:", phone1.model)
+print("Weight:", phone1.weight)
+
+print("\nPhone 2:")
+print("Number:", phone2.number)
+print("Model:", phone2.model)
+print("Weight:", phone2.weight)
+
+print("\nPhone 3:")
+print("Number:", phone3.number)
+print("Model:", phone3.model)
+print("Weight:", phone3.weight)
+
+# Вызов методов receiveCall и getNumber для каждого объекта
+phone1.receiveCall("John")
+print("Number:", phone1.getNumber())
+
+phone2.receiveCall("Mary")
+print("Number:", phone2.getNumber())
+
+phone3.receiveCall("Peter")
+print("Number:", phone3.getNumber())
+
+# Конструктор с тремя параметрами
+phone4 = Phone("111222333", "Nokia 3310", "200g")
+
+# Конструктор с двумя параметрами
+phone5 = Phone("555444666", "Motorola Razr")
+
+# Конструктор без параметров
+phone6 = Phone()
